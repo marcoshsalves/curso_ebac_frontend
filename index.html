@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transferência de valores</title>
+    <link rel="stylesheet" href="./main.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Sunlight Banking</h1>
+        <h2>Transferência</h2>
+        <form id="form-deposito">
+            <input type="number" id="valor-transferencia" required placeholder="Valor a ser transferido" />
+            <input type="number" id="valor-conta" required placeholder="Valor presente na conta" />
+            <textarea placeholder="Descrição (opcional)"></textarea>
+            <button id="btn-transferir" type="submit">Transferir</button>
+            <p class="error-message">
+                Você não pode transferir um valor que você não tem.
+            </p>
+        </form>
+        <p class="success-message">
+            Valor transferido com sucesso!
+        </p>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
