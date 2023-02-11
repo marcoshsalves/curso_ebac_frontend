@@ -1,6 +1,7 @@
 const form = document.getElementById('form-deposito');
 const valorConta = document.getElementById('valor-conta');
 const valorTransferencia = document.getElementById('valor-transferencia');
+const botaoTransferencia = document.getElementById('btn-transferir');
 
 function transferirSaldo () {
     if (valorConta.value > valorTransferencia.value) return true;
@@ -27,10 +28,10 @@ form.addEventListener('submit', function(e) {
     document.querySelector('.error-message').style.display = 'block';
 })
 
-valorTransferencia.addEventListener('keyup', function(e) {
+botaoTransferencia.addEventListener('keyup', function(e) {
     const formEValido = transferirSaldo()
     if (formEValido) {
-        valorTransferencia.classList.remove('error');
+        valorTransferencia.classList.remove('.error');
         document.querySelector('.error-message').style.display = 'none';
         return;
     }
