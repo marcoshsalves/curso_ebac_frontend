@@ -3,13 +3,12 @@ $(document).ready(function () {
         e.preventDefault();
         const nomeNovaTarefa = $('#nova-tarefa').val();
         $('ul').append(`<li id="item">${nomeNovaTarefa}</li>`)
+        $('li').click(function() {
+            console.log('clicou aqui');
+            $(this).addClass('item-completado');
+    })
 
         $('#nova-tarefa').val('');
         console.log('enviou aqui');
-    })
-
-    $('li').click(function() {
-        console.log('clicou aqui');
-        $(this).addClass('item-completado');
     })
 })
