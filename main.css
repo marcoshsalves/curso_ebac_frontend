@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    background-color: #c8d6e5;
+}
+
+header {
+    padding: 16px 0;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+form {
+    padding: 24px 0;
+    text-align: center;
+}
+
+input, button {
+    padding: 12px;
+}
+
+button {
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+ul {
+    text-align: center;
+    cursor: pointer;
+}
+
+ul li {
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.item-completado {
+    text-decoration: line-through;
+}
